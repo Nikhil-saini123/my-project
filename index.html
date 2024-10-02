@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Saini - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('op.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            border-color: #00ff00;
+            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5);
+        }
+        /* Container to split the page */
+        .intro-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50vh; /* Set to cover half of the screen */
+            padding: 20px;
+        }
+        .intro {
+            width: 50%;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: 0.3s;
+        }
+        .intro:hover {
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+            border-color: #00ffff;
+        }
+        .anime-image {
+            width: 50%;
+            text-align: center;
+        }
+        .anime-image img {
+            width: 90%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: 0.3s;
+        }
+        .anime-image img:hover {
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+        }
+        .education, .templates, .cv-download {
+            clear: both;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: 0.3s;
+        }
+        .education:hover, .templates:hover, .cv-download:hover {
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+            border-color: #ff00ff;
+        }
+        /* Education Section */
+        .qualification-block {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: 0.3s;
+        }
+        .qualification-block:hover {
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+        }
+        .qualification-block p {
+            margin: 5px 0;
+        }
+        .qualification-block strong {
+            display: inline-block;
+            width: 150px;
+        }
+        /* Templates Section */
+        .templates ul {
+            list-style-type: none;
+        }
+        .templates li {
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: 0.3s;
+        }
+        .templates li:hover {
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4);
+        }
+        .templates a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .templates a:hover {
+            text-decoration: underline;
+            color: #00ffcc;
+        }
+        /* CV Button */
+        .cv-download a {
+
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            background: linear-gradient(135deg, #ff6600, #ff0000);
+            padding: 15px 30px;
+            border-radius: 20px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .cv-download a:hover {
+            background: linear-gradient(135deg, #ff9900, #ff3300);
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 100, 0, 0.7);
+
+        }
+        footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+        }
+        footer .contact-info {
+            margin-bottom: 10px;
+        }
+        footer .contact-info p {
+            margin: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+         <h1 style="position: fixed;">logo</h1>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#cv">Download CV</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction Section -->
+    <section id="home" class="intro-section">
+        <div class="intro">
+            <h2>Nikhil Saini</h2>
+            <!-- <p>Hello, I am Nikhil Saini. I am currently pursuing MCA from CITM and completed my BCA in 2023. I love learning new technologies, solving coding problems, and creating websites. I enjoy watching anime and action movies in my free time.</p> -->
+            <p>I’m a passionate web developer and a coding enthusiast, currently pursuing a Master of Computer Applications (MCA) from CITM College. I have a Bachelor of Computer Applications (BCA) degree, which I completed in 2023, and since then, I have been consistently honing my skills in various programming languages and technologies.
+
+I enjoy learning about new advancements in technology, solving coding challenges, and developing innovative websites. My expertise includes HTML, CSS, JavaScript, Python, and PHP, and I constantly strive to expand my knowledge. Apart from coding, I have a keen interest in anime and action movies, which inspire creativity in my projects.
+
+Feel free to explore my work, download my CV, or get in touch with me for any collaborations or opportunities.
+
+</p>
+        </div>
+
+        <!-- Anime Image -->
+        <div class="anime-image">
+            <img src="oi.jpeg" alt="Anime Character">
+
+
+
+            <!-- Audio element (hidden) -->
+    <audio id="hoverSound">
+        <source src="Mar Jaayen sad song (anime) version.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>Educational Qualification</h2>
+        <div class="qualification-block">
+            <p><strong>Class:</strong> 10th</p>
+            <p><strong>School:</strong> Jaipur International School</p>
+            <p><strong>Percentage:</strong> 61%</p>
+            <p><strong>Year:</strong> 2018</p>
+        </div>
+        <div class="qualification-block">
+            <p><strong>Class:</strong> 12th</p>
+            <p><strong>School:</strong> VSI International School</p>
+            <p><strong>Percentage:</strong> 73%</p>
+            <p><strong>Year:</strong> 2020</p>
+        </div>
+        <div class="qualification-block">
+            <p><strong>Degree:</strong> BCA</p>
+            <p><strong>College:</strong> CITM College</p>
+            <p><strong>Year:</strong> 2023</p>
+        </div>
+        <div class="qualification-block">
+            <p><strong>Degree:</strong> MCA (Pursuing)</p>
+            <p><strong>College:</strong> CITM College</p>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section id="templates" class="templates">
+        <h2>Available Templates</h2>
+        <ul>
+            <li><a href="one.html">Template 1</a></li>
+            <li><a href="two.html">Template 2</a></li>
+            <li><a href="three.html">Template 3</a></li>
+        </ul>
+    </section>
+
+    <!-- Download CV Button -->
+    <section id="cv" class="cv-download">
+        <h2>Download My CV</h2>
+        <a href="cv.pdf" download  style="text-align: center;">Download CV</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p>Nikhil Saini</p>
+            <p>Email: nikhil@example.com</p>
+            <p>Phone: 8739992381</p>
+            <p>Location: Jaipur, India</p>
+        </div>
+        <p>&copy; 2024 Nikhil Saini. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+              <script>
+        // Get the image and audio elements
+        const animeImage = document.getElementById('animeImage');
+        const hoverSound = document.getElementById('hoverSound');
+
+        // Play music when hovering over the image
+        animeImage.addEventListener('mouseenter', function() {
+            hoverSound.play();
+        });
+
+        // Optionally, pause or stop the music when the mouse leaves
+        animeImage.addEventListener('mouseleave', function() {
+            hoverSound.pause();
+            hoverSound.currentTime = 0; // Reset the audio to start from the beginning next time
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
