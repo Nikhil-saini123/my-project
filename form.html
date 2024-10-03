@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	
+	<style>
+		
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	font-family: sans-serif;
+ 	text-decoration: none;
+ 	list-style: none;
+ }
+ .hero
+ {
+ 	min-height: 100vh;
+ 	background: url('io.jpg');
+ 	background-position: center;
+ 	background-size: cover;
+ 	background-repeat:no-repeat;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	 /*background-attachment: fixed;*/
+ 	 overflow: hidden;
+ }
+ .login_container{
+ 	width: 420px;
+ 	background: transparent;
+ 	/*background: blueviolet;*/
+ 	border: 2px solid rgba(255, 255, 255, .2);
+ 	box-shadow: rgba(0, 0, 0, .2);
+ 	color: #fff;
+ 	border-radius: 11px;
+ 	padding: 30px 40px;
+ 	/*filter: blur(20px);  */
+ 	 /*sahi karna hay bada maay*/
+ 	 /*yhr tooo */
+ 	 /*backdrop-filter: blur(20px);*/
+
+ }
+.login_container h2{
+	text-align: center;
+	font-size: 36px;
+
+}
+.login_container .input_box{
+	width: 100%;
+	height: 50px;
+	background: #000000;
+	margin: 30px 0;
+	position: relative;
+}
+.input_box input{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	border: 2px solid rgba(255, 255, 255, .2);
+	border-radius: 2rem;
+	font-size: 16px;
+	color: #fff;
+	padding: 20px 45px 20px 20px;
+}
+.input_box input::paceholder
+{
+	color: #fff;
+
+}
+
+
+ .input_box i {
+ 	position: absolute;
+ 	right: 20px;
+ 	top: 50%;
+ 	transform: translateY(-50%);
+ 	color: #fff;
+ }
+
+.remember_forgot{
+	display: flex;
+	justify-content: space-between;
+	font-size: 15px;
+	margin: -15px 0 15px;
+}
+.remember_forgot label input{
+	margin-right: 5px;
+	accent-color: #ffffff;
+}
+.remember_forgot a{
+	color: #fff;
+}
+.remember_forgot a:hover{
+	text-decoration: underline;
+	color: yellow;
+}
+.login_container button{
+width: 100%;
+height: 45px;
+background: #fff;
+border: none;
+outline: none;
+border-radius: 2rem;
+box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+font-size: 15px;
+color: #333;
+font-weight: 600;
+cursor: pointer;
+}
+.login_container button:hover{
+	background: rgb(223, 46, 254);
+	color: #fff;
+	opacity: .6;
+	box-shadow: 0  0 20px rgb(223, 46, 254);
+}
+.sign_up{
+	font-size: 15px;
+	text-align: center;
+	margin: 20px 0;
+}
+.sign_up p a{
+	color: #fff;
+	font-weight: 600;
+
+}
+.sign_up p a:hover{
+	text-decoration: underline;
+}
+
+
+	</style>
+</head>
+<body>
+	<div class="hero">
+		<div class="login_container">
+			<form action="#">
+				<h2>Login</h2>
+				<div class="input_box">
+					<input type="text" name="" placeholder="user name">
+					<i class="fas fa-user"></i> <!-- Username icon -->
+				</div>
+
+				<div class="input_box">
+					<input type="password" placeholder="password" name="">
+					<i class="fas fa-lock"></i> <!-- Password icon -->
+
+				</div>
+
+				<div class="input_box">
+					<input type="email" placeholder="email" name="">
+                               <i class="fas fa-envelope"></i> <!-- Email icon -->
+				</div>
+				<div class="remember_forgot">
+                            <label><input type="checkbox" name="" checked> Remember me</label>
+                            <a href="#">Forget password</a>
+
+				 </div>
+				 <button type="submit">Login</button>
+				 <div class="sign_up">
+				 	<p>not a member ?<a href="reg.html">signup</a></p>
+				 </div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
