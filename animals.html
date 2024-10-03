@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife Photography and Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        section {
+            margin: 50px auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        /* Section 1 */
+        .wildlife-section .image-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .wildlife-section .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .wildlife-section .text-overlay {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .wildlife-section .text-overlay h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .wildlife-section .text-overlay p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .view-more-btn {
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Section 2 */
+        .explore-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .explore-section h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .explore-section p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .image-column {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .image-column img:hover {
+            border-color: #7d5ba6; /* Purple color for hover effect */
+        }
+
+        .image-column p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: lightgray;
+        }
+
+        /* Section 3 */
+        .wildlife-photography-section .image-container {
+            position: relative;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .wildlife-photography-section .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .wildlife-photography-section .image-container img:hover {
+            border-color: #7d5ba6;
+        }
+
+        .wildlife-photography-section .text-overlay {
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .wildlife-photography-section .text-overlay h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .wildlife-photography-section .text-overlay p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .lower-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .lower-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .lower-section p {
+            font-size: 16px;
+            color: lightgray;
+            line-height: 1.6;
+        }
+
+        /* Wildlife Gallery Section */
+        .gallery-section {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .gallery-section .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .gallery-section .image-row img {
+            width: 23%;
+            height: auto;
+            margin-bottom: 10px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .gallery-section .image-row img:hover {
+            border-color: #7d5ba6;
+        }
+
+        .gallery-section .image-caption {
+            margin-top: 10px;
+        }
+
+        .gallery-section .image-caption h2 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .gallery-section .image-caption p {
+            font-size: 1em;
+        }
+
+        /* Adjust margins between sections */
+        section + section {
+            margin-top: 100px;
+        }
+
+        /* Section 2 and 3 Image Hover */
+/* Section 1 Image Hover */
+.wildlife-section .image-container img:hover,
+.image-column img:hover, 
+.wildlife-photography-section .image-container img:hover, 
+.gallery-section .image-row img:hover {
+    border-color: #ff00ff; /* Magenta border color on hover */
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4); /* Subtle white shadow effect */
+}
+
+
+/* Keep the rest of your styles unchanged */
+
+    </style>
+</head>
+<body>
+    <!-- Section 1 -->
+    <section class="wildlife-section">
+        <div class="image-container">
+            <img class ="image-column"src="d.jpg" alt="Wildlife Photography">
+            <div class="text-overlay">
+                <h1>The best of the wildlife photography</h1>
+                <p>Winning images from national and international wildlife photography competitions of the year</p>
+                <button class="view-more-btn">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="explore-section">
+        <h2>Explore The World</h2>
+        <p>Phasellus eget lacinia ipsum. Aliquam lectus tellus, cursus at fermentum id, hendrerit sollicitudin.</p>
+        <div class="image-row">
+            <div class="image-column">
+                <img src="bb.jpg" alt="Aquatic Life">
+                <p>Roundup at Revillagigedo, by Ralph Pace, Big Picture wildlife images competition, aquatic life</p>
+            </div>
+            <div class="image-column">
+                <img src="mk.jpg" alt="Golden Monkeys">
+                <p>Dutch photographer Marsel van Oosten's stunning portrait of two golden snub-nosed monkeys</p>
+            </div>
+            <div class="image-column">
+                <img src="kk.webp" alt="Komodo Dragons">
+                <p>Komodo Judo by Andrey Gudkov Two large male Komodo dragons hissing angrily at each other in national park.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="wildlife-photography-section">
+        <div class="image-container">
+            <img src="ll.jpg" alt="Elephants">
+            <div class="text-overlay">
+                <h2>50 Years of Wildlife Photographer of the Year</h2>
+                <p>Natural History Museum's new book released on Wednesday marks five decades of the WPY competition...</p>
+            </div>
+        </div>
+        <div class="lower-section">
+            <h2>Top scientists demand NSW commit to brumby cull in Kosciuszko national park</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus laoreet purus quis elementum...</p>
+        </div>
+    </section>
+
+    <!-- Section 4 - Wildlife Gallery -->
+    <section class="gallery-section">
+        <div class="image-row">
+            <img src="g.jpeg" alt="Image 1">
+            <img src="bb.jpg" alt="Image 2">
+            <img src="oo.avif" alt="Image 3">
+            <img src="vv.webp" alt="Image 4">
+        </div>
+
+        <!-- Image Captions -->
+        <div class="image-row">
+            <div class="image-caption">
+                <h2>Headline</h2>
+                <p>Sample footer text</p>
+            </div>
+            <div class="image-caption">
+                <h2>Headline</h2>
+                <p>Sample footer text</p>
+            </div>
+            <div class="image-caption">
+                <h2>Headline</h2>
+                <p>Sample footer text</p>
+            </div>
+            <div class="image-caption">
+                <h2>Headline</h2>
+                <p>Sample footer text</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
